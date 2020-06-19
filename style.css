@@ -1,0 +1,351 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: MontRegular;
+  src: url('./Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: MontLight;
+  src: url('./Montserrat/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: MontSemiBold;
+  src: url('./Montserrat/Montserrat-SemiBold.ttf');
+}
+
+body {
+  font-family: MontRegular;
+}
+
+h5 {
+  font-family: MontLight;
+  line-height: 2rem;
+  font-size: 16px;
+}
+
+h3 {
+  font-family: MontLight;
+  line-height: 2.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 20px;
+}
+
+b {
+  font-family: MontSemiBold;
+  color: #697c37;
+  font-size: 30px;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: square;
+}
+
+section {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f7fbe1;
+}
+
+footer nav {
+  background-color: #f7fbe1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+button {
+  background-color: #697c37;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  width: 20%;
+  height: 50%;
+}
+
+button:hover {
+  animation: dot 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes dot {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem;
+  letter-spacing: 0.15em;
+}
+
+.carousel-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+.carousel-container img {
+  height: 100%;
+  opacity: 0.9;
+  object-fit: cover;
+  object-position: top;
+}
+
+#prevButton {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+}
+
+#nextButton {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  right: 5%;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+}
+
+.main-content {
+  font-size: 22px;
+  margin: 1rem;
+}
+
+.sub-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 2rem;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.intro-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  width: 75%;
+  line-height: 3rem;
+  text-align: justify;
+}
+
+.intro-environment-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.intro-environment-image img {
+  width: 90%;
+}
+
+.intro-sub-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 3rem 0rem;
+  padding: 0rem 3.5rem;
+}
+
+.offerings {
+  width: 50%;
+}
+
+.list-elements {
+  border: 2px solid #697c37;
+  padding: 0.5rem;
+  margin: 1.5rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+}
+
+.list-elements-title {
+  border: 4px solid #697c37;
+  background-color: #697c37;
+  color: white;
+  padding: 0.5rem;
+  margin: 0.8rem 1.5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.logo-wrapper {
+  display: flex;
+  width: 20%;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  margin-left: 2.5rem;
+}
+
+.logo-wrapper img {
+  width: 60%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.slogan {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.3rem;
+}
+
+.product-gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  width: 45%;
+  min-height: 20rem;
+  margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-wrapper-description {
+  width: 60%;
+  height: 100%;
+  padding: 1.2rem;
+}
+
+.product-wrapper-description h5 {
+  padding: 1.5rem;
+}
+
+.product-wrapper-description b {
+  padding-left: 1.5rem;
+}
+
+.product-wrapper-description a {
+  top: auto;
+  bottom: 0;
+}
+
+.product-wrapper img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+}
+
+.product-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.customer-review-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 40rem;
+  margin-top: 3rem;
+  text-align: justify;
+  line-height: 2.5rem;
+  border: 0.5px solid #697c37;
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+.customer-review-wrapper img {
+  width: 40%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top;
+}
+
+.customer-review-wrapper h3 {
+  width: 50%;
+}
+
+.signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+  width: 60%;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.15em;
+  text-align: justify;
+  width: 100%;
+  padding: 0rem 2rem 3rem 2rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info a {
+  padding-right: 3rem;
+}
