@@ -53,7 +53,7 @@ ul {
 
 section {
   padding: 1rem;
-  margin: 2rem;
+  margin: 1rem 2rem;
 }
 
 header nav {
@@ -73,23 +73,8 @@ footer nav {
   padding: 1rem;
 }
 
-button {
-  background-color: #697c37;
-  background: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  width: 30%;
-  height: 100%;
-  padding: 0.5rem;
-}
-
 button:hover {
   animation: dot 0.5s ease-in-out infinite alternate;
-}
-
-button img {
-  float: left;
 }
 
 @keyframes dot {
@@ -212,6 +197,15 @@ button img {
     margin: 0.2rem;
   }
 
+  .slogan {
+    padding: 0rem;
+    display: none;
+  }
+
+  .products {
+    margin-top: 1rem;
+  }
+
   .logo-wrapper {
     display: flex;
     justify-content: center;
@@ -220,11 +214,11 @@ button img {
 
   .jumbotron {
     padding: 1rem !important;
-    margin: 0rem !important;
+    margin: 1rem 0rem !important;
   }
 
   .title {
     padding: 0.5rem;
-    margin: 1rem;
+    margin: 3rem 0rem;
   }
 }
